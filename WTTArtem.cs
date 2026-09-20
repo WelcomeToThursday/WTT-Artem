@@ -9,7 +9,6 @@ using SPTarkov.Server.Core.Routers;
 using SPTarkov.Server.Core.Utils;
 using Path = System.IO.Path;
 
-
 namespace WTTArtem;
 
 [Injectable(TypePriority = OnLoadOrder.Preload + 2), UsedImplicitly]
@@ -26,11 +25,10 @@ public class WTTArtem(
 
     public  async Task OnLoadAsync(CancellationToken cancellationToken)
     {
-        
         var pathToMod = modHelper.GetAbsolutePathToModFolder(Assembly.GetExecutingAssembly());
+        var assembly = Assembly.GetExecutingAssembly();
         
-        Assembly assembly = Assembly.GetExecutingAssembly();
-        
+        await wttCommon.CustomItemParentService.CreateCustomParents(assembly);
         await wttCommon.CustomItemServiceExtended.CreateCustomItems(assembly);
         await wttCommon.CustomQuestZoneService.CreateCustomQuestZones(assembly);
         
@@ -38,7 +36,7 @@ public class WTTArtem(
         var traderBase = modHelper.GetJsonDataFromFile<TraderBase>(pathToMod, "db/base.json");
         
         imageRouter.AddRoute(traderBase.Avatar!.Replace(".jpg", ""), traderImagePath);
-        wttArtemHelper.SetTraderUpdateTime(traderConfig, traderBase, timeUtil.GetHoursAsSeconds(1), timeUtil.GetHoursAsSeconds(2));
+        WTTArtemHelper.SetTraderUpdateTime(traderConfig, traderBase, timeUtil.GetHoursAsSeconds(1), timeUtil.GetHoursAsSeconds(2));
         
         ragfairConfig.Traders.TryAdd(traderBase.Id, true);
         

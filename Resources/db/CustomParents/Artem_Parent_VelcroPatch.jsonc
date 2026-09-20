@@ -1,0 +1,17 @@
+﻿{
+	"6aaf31238352365efe1c9160": {
+		"_id": "6aaf31238352365efe1c9160",
+		"_name": "VelcroPatch",
+		"_parent": "55818b224bdc2dde698b456f",
+		"_type": "Node",
+		"_props": {},
+		"addToTraderBuyLists": true,
+		"traders": ["mechanic"],
+		"addToContainerFilters": true,
+		"containers": [
+			"59fb042886f7746c5005a7b2", // item case
+			"5c0a840b86f7742ffa4f2482", // t h i c c item case
+			"5b7c710788a4506dec015957"  // scav junkbox
+		]
+	}
+}

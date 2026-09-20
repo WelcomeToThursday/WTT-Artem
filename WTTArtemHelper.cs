@@ -25,7 +25,7 @@ public class WTTArtemHelper(
     /// <param name="baseJson">json file for trader (db/base.json)</param>
     /// <param name="refreshTimeSecondsMin">How many seconds between trader stock refresh min time</param>
     /// <param name="refreshTimeSecondsMax">How many seconds between trader stock refresh max time</param>
-    public void SetTraderUpdateTime(TraderConfig traderConfig, TraderBase baseJson, int refreshTimeSecondsMin, int refreshTimeSecondsMax)
+    public static void SetTraderUpdateTime(TraderConfig traderConfig, TraderBase baseJson, int refreshTimeSecondsMin, int refreshTimeSecondsMax)
     {
         // Add refresh time in seconds to config
         var traderRefreshRecord = new UpdateTime
