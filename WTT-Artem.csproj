@@ -13,6 +13,12 @@
     <PackageReference Include="WTT-ServerCommonLib" Version="3.0.0" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="Resources\bundles\" />
+    <Folder Include="Resources\db\CustomClothing\" />
+    <Folder Include="Resources\db\CustomItems\" />
+  </ItemGroup>
+
   <PropertyGroup>
     <TarkovDir Condition=" '$(TarkovDir)' == '' ">$(SolutionDir)..\..\</TarkovDir>
     <ServerModDir>$(TarkovDir)SPT_Runtime\user\mods\</ServerModDir>
