@@ -1,0 +1,70 @@
+﻿{
+	"GENERATE_UNIQUE_ID_HERE": {
+		"itemTplToClone": "SET_ME_TO_ITEM_THATS_BEING_CLONED",
+		"parentId": "6aaf31238352365efe1c9160", // VelcroPatch
+		"handbookParentId": "SET_ME",
+		"overrideProperties": {
+          
+		},
+		"locales": {
+			"en": {
+				"name": "SET_ME",
+				"shortName": "SET_ME",
+				"description": "WRITE_A_DESCRIPTION_HERE"
+			}
+		},
+		"fleaPriceRoubles": 0,
+		"handbookPriceRoubles": 0,
+		"addtoInventorySlots": [],
+		"addtoModSlots": false,
+		"modSlot": null,
+		"addtoTraders": false,
+		"traders": {
+			"PUT_TRADER_ID_HERE": {
+				"PUT_UNIQUE_ITEM_ID_HERE": {
+					"barterSettings": {
+						"loyalLevel": 1,
+						"unlimitedCount": false,
+						"stackObjectsCount": 1,
+						"buyRestrictionMax": 3
+					},
+					"barters": [
+						{
+							"count": 15000,
+							"_tpl": "SET_ME",
+							"onlyFunctional": false,
+							"sptQuestLocked": false
+						}
+					]
+				}
+			}
+		},
+		"addtoBots": false,
+		"addtoStaticLootContainers": false,
+		"staticLootContainers": [
+			{
+				"containerName": "weapon_box",
+				"probability": 10
+			}
+		],
+		"masteries": false,
+		"masterySections": null,
+		"addWeaponPreset": false,
+		"weaponPresets": null,
+		"addtoHallOfFame": false,
+		"hallOfFameSlots": null,
+		"addtoSpecialSlots": false,
+		"addtoGeneratorAsFuel": false,
+		"generatorFuelSlotStages": null,
+		"addtoHideoutPosterSlots": false,
+		"addPosterToMaps": false,
+		"posterSpawnProbability": null,
+		"addtoStatuetteSlots": false,
+		"addCaliberToAllCloneLocations": false,
+		"addtoStaticAmmo": false,
+		"staticAmmoProbability": null,
+		"addtoEmptyPropSlots": false,
+		"emptyPropSlot": null,
+		"addtoSecureFilters": false
+	}
+}

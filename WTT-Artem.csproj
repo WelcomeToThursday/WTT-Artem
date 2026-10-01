@@ -16,7 +16,8 @@
   <ItemGroup>
     <Folder Include="Resources\bundles\" />
     <Folder Include="Resources\db\CustomClothing\" />
-    <Folder Include="Resources\db\CustomItems\" />
+    <Folder Include="Resources\db\DevAssets\CustomClothing\" />
+    <Folder Include="Resources\db\DevAssets\CustomItems\" />
   </ItemGroup>
 
   <PropertyGroup>
